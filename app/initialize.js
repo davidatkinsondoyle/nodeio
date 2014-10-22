@@ -1,6 +1,8 @@
 'use strict';
 
-window.App = Ember.Application.create();
+window.App = Ember.Application.create({
+	LOG_TRANSITIONS: true,
+});
 
 // Temporary fix for ember-precompiler-brunch
 if(!window.module) {
